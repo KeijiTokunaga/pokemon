@@ -10,6 +10,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.component';
 
+import { ChartsModule } from 'ng2-charts';
+import { MatGridListModule } from '@angular/material/grid-list';
+
 @NgModule({
   declarations: [AppComponent, PokemonListComponent, PokemonDetailComponent],
   imports: [
@@ -18,6 +21,8 @@ import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.componen
     BrowserAnimationsModule,
     MatToolbarModule,
     MatCardModule,
+    ChartsModule,
+    MatGridListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

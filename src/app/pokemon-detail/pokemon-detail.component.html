@@ -1,7 +1,28 @@
 <mat-card *ngIf="pokemon">
-  <img src="/assets/images/{{ pokemon.id | number: '3.0' }}.png" alt="" />
-  <p>名前:{{ pokemon.name.japanese }}</p>
-  <p>体力:{{ pokemon.base.HP }}</p>
-  <p>攻撃力{{ pokemon.base.Attack }}</p>
-  <p>防御力{{ pokemon.base.Defense }}</p>
+  <mat-grid-list cols="2" rowHeight="1:1">
+    <mat-grid-tile>
+      <div>
+        <img src="/assets/images/{{ pokemon.id | number: '3.0' }}.png" alt="" />
+        <p>名前:{{ pokemon.name.japanese }}</p>
+        <p>体力:{{ pokemon.base.HP }}</p>
+        <p>攻撃力{{ pokemon.base.Attack }}</p>
+        <p>防御力{{ pokemon.base.Defense }}</p>
+        <p>スピード{{ pokemon.base.Speed }}</p>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div style="display: block">
+        <canvas
+          width="500"
+          height="500"
+          baseChart
+          [datasets]="radarChartData"
+          [options]="radarChartOptions"
+          [labels]="radarChartLabels"
+          [chartType]="radarChartType"
+        >
+        </canvas>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
 </mat-card>
