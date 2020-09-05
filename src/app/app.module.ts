@@ -12,6 +12,7 @@ import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.componen
 
 import { ChartsModule } from 'ng2-charts';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 @NgModule({
   declarations: [AppComponent, PokemonListComponent, PokemonDetailComponent],
@@ -23,6 +24,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatCardModule,
     ChartsModule,
     MatGridListModule,
+    LazyLoadImageModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

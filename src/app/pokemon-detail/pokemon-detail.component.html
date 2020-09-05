@@ -2,7 +2,10 @@
   <mat-grid-list cols="2" rowHeight="1:1">
     <mat-grid-tile>
       <div>
-        <img src="/assets/images/{{ pokemon.id | number: '3.0' }}.png" alt="" />
+        <img
+          lazyLoad="/assets/images/{{ pokemon.id | number: '3.0' }}.png"
+          alt=""
+        />
         <p>名前:{{ pokemon.name.japanese }}</p>
         <p>体力:{{ pokemon.base.HP }}</p>
         <p>攻撃力{{ pokemon.base.Attack }}</p>

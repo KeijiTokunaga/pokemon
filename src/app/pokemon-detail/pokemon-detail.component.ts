@@ -29,12 +29,22 @@ export class PokemonDetailComponent implements OnInit {
     this.route.paramMap.subscribe((map) => {
       const id = +map.get('id');
       this.pokemon = this.pokemons[id - 1];
+      console.log(this.pokemon.base.HP);
+      console.log(this.pokemon.base.Attack);
+      console.log(this.pokemon.base.Defense);
+      console.log(this.pokemon.base.Speed);
       this.radarChartData.push({
         data: [
+          /*
           this.pokemon.base.HP,
           this.pokemon.base.Attack,
           this.pokemon.base.Defense,
           this.pokemon.base.Speed,
+          */
+          40,
+          35,
+          30,
+          50,
         ],
       });
     });
