@@ -10,6 +10,9 @@ import { Label } from 'ng2-charts';
   styleUrls: ['./pokemon-detail.component.scss'],
 })
 export class PokemonDetailComponent implements OnInit {
+  //widthsize = 200;
+  //heightsize = 200;
+
   pokemons = POKEMONS;
   pokemon;
 
