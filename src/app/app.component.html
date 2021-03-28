@@ -1,5 +1,14 @@
+
 <mat-toolbar color="primary">
-  <a routerLink="/">ポケモン図鑑</a>
+  <a routerLink="/" mat-button>ポケモン図鑑</a>
+  <div class="spacer">
+    <form class="search">
+      <input type="text" class="search__input" autocomplete="off">
+      <button class="search__button"> 
+        <mat-icon class="mat-18">search</mat-icon>
+      </button>
+    </form>
+    </div>
 </mat-toolbar>
 
 <router-outlet class="container"></router-outlet>

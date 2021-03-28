@@ -14,6 +14,11 @@ import { ChartsModule } from 'ng2-charts';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatSelectModule} from '@angular/material/select';
+import {MatInputModule} from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+
 @NgModule({
   declarations: [AppComponent, PokemonListComponent, PokemonDetailComponent],
   imports: [
@@ -25,6 +30,10 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     ChartsModule,
     MatGridListModule,
     LazyLoadImageModule,
+    FlexLayoutModule,
+    MatSelectModule,
+    MatInputModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent],
