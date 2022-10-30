@@ -1,3 +1,5 @@
+![sequence dialog](http://www.plantuml.com/plantuml/proxy?src=https://gist.githubusercontent.com/takke/995d474a8ad72a724c8187cf21b1e238/raw)
+
 # Pokemon
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
