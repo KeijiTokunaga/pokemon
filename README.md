@@ -1,5 +1,3 @@
-![sequence dialog](https://github.com/KeijiTokunaga/pokemon/blob/master/test.md)
-
 # Pokemon
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.4.
